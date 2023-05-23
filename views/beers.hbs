@@ -1,0 +1,15 @@
+{{#each data}}
+  <h3>{{this.name}}</h3>
+  <p>
+    {{this.description}}
+  </p>
+  <p>
+    {{this.food_pairing}}
+  </p>
+  <p>
+    {{this.brewers_tips}}
+  </p>
+
+  <img src={{this.image_url}} />
+
+{{/each}}
