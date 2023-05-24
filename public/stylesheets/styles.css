@@ -50,10 +50,64 @@ body {
   color: #f7f9f9;
 }
 
-.nav {
-  background-color: #0a2c42;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  color: #0a2c42;
+nav {
+  background-color: #2081c3;
+  height: 64px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+nav a:hover {
+  background-color: #449ed9;
+}
+
+.beer-container {
+  display: flex;
+  margin: 10px 10px;
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.beer-image {
+  display: flex;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 200px;
+}
+
+.beer-image img {
+  /* width: auto;
+  height: 100%; */
+}
+
+.beer-detail {
+  display: flex;
+  flex-direction: column;
+  /* background-color: cyan; */
+  margin-left: 40px;
+  flex: 1;
+}
+
+.tag-line {
+  color: gray;
+  font-size: 14pt;
+}
+.inline-heading {
+  display: inline;
+}
+
+.inline-heading span {
+  font-size: 14px !important;
 }
