@@ -73,8 +73,6 @@ nav a:hover {
 
 .beer-container {
   display: flex;
-  margin: 10px 10px;
-  border: 1px solid gray;
   padding: 10px;
 }
 
@@ -95,7 +93,6 @@ nav a:hover {
 .beer-detail {
   display: flex;
   flex-direction: column;
-  /* background-color: cyan; */
   margin-left: 40px;
   flex: 1;
 }
@@ -110,4 +107,20 @@ nav a:hover {
 
 .inline-heading span {
   font-size: 14px !important;
+}
+.random-beer-page {
+  width: 450px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.random-beer-page .image-wrapper img {
+  width: 100px;
+  height: auto;
+  display: block;
 }
