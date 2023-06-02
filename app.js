@@ -14,14 +14,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 hbs.registerPartials(path.join(__dirname, './views/partials'));
 
-hbs.registerHelper('attr', function (name, data) {
-  if (typeof target === 'undefined') target = '';
-
-  var result = ' ' + name + '=/beer?id=' + data + ' ';
-
-  return new hbs.SafeString(result);
-});
-
 app.get('/', (req, res) => {
   res.render('index');
 });
@@ -51,7 +43,7 @@ app.get('/random-beer', (req, res) => {
 
 app.get('/beer', (req, res) => {
   const id = req.query.id;
-
+  console.log(id);
   punkAPI
     .getBeer(id)
     .then(data => {
